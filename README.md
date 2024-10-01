@@ -16,7 +16,7 @@
 	- Download repository or git pull code on your local machine.
 	- Env file : add your mongooes url and other setting
 	- Run command "npm install"
-	- Npm run dev
+	- npm run dev
 	- then open url in browser : http://localhost:8000/
 
 4. Api use 
