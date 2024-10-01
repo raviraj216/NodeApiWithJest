@@ -5,7 +5,7 @@
 
 	- JSON Web Token (JWT)
 	- TypeScript
-	- Mongooes
+	- Mongoose
 	- Express
 	- Jest test
 
@@ -14,7 +14,7 @@
 
 3. Setup Code :-
 	- Download repository or git pull code on your local machine.
-	- Env file : add your mongooes url and other setting
+	- Env file : add your mongoose url and other setting
 	- Run command "npm install"
 	- npm run dev
 	- then open url in browser : http://localhost:8000/
