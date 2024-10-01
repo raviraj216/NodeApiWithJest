@@ -14,7 +14,7 @@
 
 3. Setup Code :-
 	- Download repository or git pull code on your local machine.
-	- Env file : add your mongooes atlas url and other setting
+	- Env file : add your mongooes url and other setting
 	- Run command "npm install"
 	- Npm run dev
 	- then open url in browser : http://localhost:8000/
