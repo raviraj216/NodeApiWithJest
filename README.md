@@ -50,5 +50,5 @@
 	- you need to run command : npm run test
 
 
-If You Found This Helpfull, then follow me.
+If You Found This Helpfull, then follow me and give a star.
 Share With Other's as well.
