@@ -1,7 +1,7 @@
 
 1. Introduction :- 
 
-	Create sample api code in node js using follwing
+	Create node js api using following:
 
 	- JSON Web Token (JWT)
 	- TypeScript
