@@ -1,54 +1,143 @@
+# 🚀 Node.js API with JWT, TypeScript, Mongoose, Express & Jest
 
-1. Introduction :- 
+## 📌 1. Introduction
 
-	Create node js api using following:
+This project is a RESTful API built using:
 
-	- JSON Web Token (JWT)
-	- TypeScript
-	- Mongoose
-	- Express
-	- Jest test
+- TypeScript
+- Express.js
+- Mongoose (MongoDB)
+- JSON Web Token (JWT) Authentication
+- Jest (for testing)
 
-2. Requirement:-
-	- node js version 20 or above 20
+---
 
-3. Setup Code :-
-	- Download repository or git pull code on your local machine.
-	- Env file : add your mongoose url and other setting
-	- Run command "npm install"
-	- npm run dev
-	- then open url in browser : http://localhost:8000/
+## ⚙️ 2. Requirements
 
-4. Api use 
-	- Create user api :
-	    url : http://localhost:8000/users/create
-	    Methoid: Post
-	    Post data: {"username":"tester","email":"tester@gmail.com","password":"123456"}
+Make sure you have the following installed:
 
-	- Login api : 
-		url : http://localhost:8000/auth/login
-	    Methoid: Post
-	    Post data: {"email":"tester@gmail.com","password":"123456"}
+- Node.js v20 or higher
+- MongoDB (local or cloud instance)
 
-	- create customer api:
-	    
-		url : http://localhost:8000/customers
-	    Methoid: Post
-	    Post data: {"name":"Customer2","email":"customer2@gmail.com","phoneNumber":"8956325688"}
-	    Header : Bearer Token : we will get token for login api
+---
 
-	 - You can find other api in code as well
-	   - update customer 
-	   - delete customer
-	   - reset user pasword api
-	   - create product
-	   - update product
-	   - delete product
+## 🛠️ 3. Setup Instructions
 
-5. If you want to run test :
-	Note : I am using jest testing module for it.
-	- you need to run command : npm run test
+Follow these steps to run the project locally:
 
+### 1. Clone the repository
+```bash
+git clone <repository-url>
+cd <project-folder>
+```
 
-If You Found This Helpfull, then follow me and give a star.
-Share With Other's as well.
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the root directory and add:
+
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=8000
+```
+
+### 4. Run the development server
+```bash
+npm run dev
+```
+
+### 5. Open in browser
+```
+http://localhost:8000/
+```
+
+---
+
+## 🔗 4. API Endpoints
+
+### 👤 User APIs
+
+#### ➤ Create User
+- URL: `http://localhost:8000/users/create`
+- Method: POST
+- Body:
+```json
+{
+  "username": "tester",
+  "email": "tester@gmail.com",
+  "password": "123456"
+}
+```
+
+---
+
+#### ➤ Login
+- URL: `http://localhost:8000/auth/login`
+- Method: POST
+- Body:
+```json
+{
+  "email": "tester@gmail.com",
+  "password": "123456"
+}
+```
+
+---
+
+### 👥 Customer APIs
+
+#### ➤ Create Customer
+- URL: `http://localhost:8000/customers`
+- Method: POST
+- Headers:
+```
+Authorization: Bearer <your_token>
+```
+- Body:
+```json
+{
+  "name": "Customer2",
+  "email": "customer2@gmail.com",
+  "phoneNumber": "8956325688"
+}
+```
+
+---
+
+### ✏️ Other Available APIs
+
+You can find additional APIs in the codebase:
+
+- Update Customer  
+- Delete Customer  
+- Reset User Password  
+- Create Product  
+- Update Product  
+- Delete Product  
+
+---
+
+## 🧪 5. Running Tests
+
+This project uses Jest for testing.
+
+Run the following command:
+
+```bash
+npm run test
+```
+
+---
+
+## ⭐ Support
+
+If you found this project helpful:
+
+- Give it a ⭐ on GitHub  
+- Share it with others  
+- Follow for more updates  
